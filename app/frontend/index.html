@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>交通风险智能道路管理系统</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-mark">TR</div>
+        <div><div class="brand-title">RoadSense</div><div class="brand-subtitle">交通风险智能管理</div></div>
+      </div>
+      <div class="environment-chip"><span class="status-dot"></span>论文数据演示环境</div>
+      <nav class="nav-list">
+        <button class="nav-item active" data-view="overview"><span class="nav-icon">⌂</span>风险驾驶舱</button>
+        <button class="nav-item" data-view="accidents"><span class="nav-icon">▦</span>事故数据分析</button>
+        <button class="nav-item" data-view="evt"><span class="nav-icon">⌁</span>轨迹极值分析</button>
+        <button class="nav-item" data-view="graph"><span class="nav-icon">◎</span>风险知识图谱</button>
+        <button class="nav-item" data-view="agent"><span class="nav-icon">✦</span>智能研判与处置</button>
+      </nav>
+      <div class="sidebar-footer"><div class="footer-label">数据覆盖</div><div class="footer-value">东南西环高速</div><div class="footer-meta">105 条论文案例 · 2025–2026</div></div>
+    </aside>
+    <main class="main-content">
+      <header class="topbar">
+        <div><div class="breadcrumb">道路安全运营平台 <span>/</span> <strong id="pageTitle">风险驾驶舱</strong></div><h1 id="pageHeading">一屏掌握道路风险脉搏</h1></div>
+        <div class="top-actions"><div class="last-sync">数据快照 <strong>2026-10-06</strong></div><button class="icon-button" title="通知">◌<span class="notification-dot"></span></button><div class="avatar">余</div></div>
+      </header>
+      <div id="app" class="view-container"></div>
+    </main>
+  </div>
+  <div id="toast" class="toast"></div>
+  <script src="/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+{
+  "nodes": [
+    {
+      "id": "n1",
+      "label": "夜间/深夜",
+      "type": "RiskFactor",
+      "group": "factor"
+    },
+    {
+      "id": "n2",
+      "label": "货车参与",
+      "type": "RiskFactor",
+      "group": "factor"
+    },
+    {
+      "id": "n3",
+      "label": "高速公路",
+      "type": "RoadScene",
+      "group": "scene"
+    },
+    {
+      "id": "n4",
+      "label": "匝道",
+      "type": "RoadScene",
+      "group": "scene"
+    },
+    {
+      "id": "n5",
+      "label": "TDTC < 1.5 s",
+      "type": "ConflictIndicator",
+      "group": "indicator"
+    },
+    {
+      "id": "n6",
+      "label": "MTTC < 2.0 s",
+      "type": "ConflictIndicator",
+      "group": "indicator"
+    },
+    {
+      "id": "n7",
+      "label": "高风险",
+      "type": "RiskLevel",
+      "group": "risk"
+    },
+    {
+      "id": "n8",
+      "label": "追尾/侧翻案例",
+      "type": "AccidentCase",
+      "group": "case"
+    },
+    {
+      "id": "n9",
+      "label": "现场防护与限速",
+      "type": "Countermeasure",
+      "group": "measure"
+    }
+  ],
+  "edges": [
+    {
+      "source": "n1",
+      "target": "n7",
+      "label": "increases_risk",
+      "weight": 0.298,
+      "source_type": "SHAP"
+    },
+    {
+      "source": "n2",
+      "target": "n7",
+      "label": "increases_risk",
+      "weight": 0.219,
+      "source_type": "SHAP"
+    },
+    {
+      "source": "n3",
+      "target": "n7",
+      "label": "increases_risk",
+      "weight": 0.205,
+      "source_type": "SHAP"
+    },
+    {
+      "source": "n4",
+      "target": "n7",
+      "label": "increases_risk",
+      "weight": 0.245,
+      "source_type": "SHAP"
+    },
+    {
+      "source": "n5",
+      "target": "n7",
+      "label": "exceeds_threshold",
+      "weight": 1.0,
+      "source_type": "EVT"
+    },
+    {
+      "source": "n6",
+      "target": "n7",
+      "label": "exceeds_threshold",
+      "weight": 1.0,
+      "source_type": "EVT"
+    },
+    {
+      "source": "n7",
+      "target": "n8",
+      "label": "similar_to",
+      "weight": 1.0,
+      "source_type": "CASE"
+    },
+    {
+      "source": "n7",
+      "target": "n9",
+      "label": "mitigated_by",
+      "weight": 1.0,
+      "source_type": "RULE"
+    }
+  ]
+}

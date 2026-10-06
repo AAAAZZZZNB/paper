@@ -1,0 +1,38 @@
+[
+  {
+    "indicator": "TDTC",
+    "threshold": 1.5,
+    "unit": "s",
+    "risk_level": "高",
+    "rule": "TDTC < 1.5 s 触发高风险底线判定",
+    "status": "论文示例规则",
+    "source": "论文第5章冲突阈值规则示例"
+  },
+  {
+    "indicator": "MTTC",
+    "threshold": 2.0,
+    "unit": "s",
+    "risk_level": "高",
+    "rule": "MTTC < 2.0 s 触发高风险关注",
+    "status": "论文示例规则",
+    "source": "论文第4章冲突风险分析示例"
+  },
+  {
+    "indicator": "PET",
+    "threshold": null,
+    "unit": "s",
+    "risk_level": "待标定",
+    "rule": "待结合轨迹样本进行POT/极值拟合",
+    "status": "待发布",
+    "source": "论文指标体系"
+  },
+  {
+    "indicator": "ΔV",
+    "threshold": null,
+    "unit": "m/s",
+    "risk_level": "待标定",
+    "rule": "待结合轨迹样本进行场景化标定",
+    "status": "待发布",
+    "source": "论文指标体系"
+  }
+]

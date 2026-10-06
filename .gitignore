@@ -1,0 +1,19 @@
+# Local/runtime
+.env
+.env.*
+.netlify/
+node_modules/
+__pycache__/
+*.pyc
+*.log
+
+# Local test helpers
+local_test_*.mjs
+
+# Do not publish raw thesis source folders or original reports here
+*.doc
+*.docx
+*.xlsx
+*.xls
+*.pdf
+*.pptx

@@ -1,0 +1,51 @@
+[
+  {
+    "feature": "夜间/深夜时段",
+    "value": 0.298,
+    "direction": "增加风险",
+    "source": "论文风险知识图谱实验：SHAP",
+    "note": "来自事故风险先验知识示例"
+  },
+  {
+    "feature": "货车参与",
+    "value": 0.219,
+    "direction": "增加风险",
+    "source": "论文风险知识图谱实验：SHAP",
+    "note": "来自事故风险先验知识示例"
+  },
+  {
+    "feature": "高速公路道路类型",
+    "value": 0.205,
+    "direction": "增加风险",
+    "source": "论文风险知识图谱实验：SHAP",
+    "note": "来自事故风险先验知识示例"
+  },
+  {
+    "feature": "匝道道路场景",
+    "value": 0.245,
+    "direction": "增加风险",
+    "source": "论文风险知识图谱实验：SHAP",
+    "note": "来自风险推理实验样例"
+  },
+  {
+    "feature": "匝道附近",
+    "value": 0.233,
+    "direction": "增加风险",
+    "source": "论文风险知识图谱实验：SHAP",
+    "note": "来自风险推理实验样例"
+  },
+  {
+    "feature": "客车参与",
+    "value": 0.176,
+    "direction": "增加风险",
+    "source": "论文风险知识图谱实验：SHAP",
+    "note": "来自风险推理实验样例"
+  },
+  {
+    "feature": "早高峰时段",
+    "value": 0.156,
+    "direction": "增加风险",
+    "source": "论文风险知识图谱实验：SHAP",
+    "note": "来自风险推理实验样例"
+  }
+]
